@@ -136,7 +136,7 @@ func sumShewchuk*[T: SomeFloat](x: openArray[T]): T =
   ## * https://code.activestate.com/recipes/393090/
   ##
   ## Reference:
-  ## * Shewchuk, JR. (1996) Adaptive Precision Floating-Point Arithmetic and \
+  ## * Shewchuk, JR. (1996) Adaptive Precision Floating-Point Arithmetic and
   ##   Fast Robust GeometricPredicates.
   ##   http://www-2.cs.cmu.edu/afs/cs/project/quake/public/papers/robust-arithmetic.ps
   let p = partials(x)
@@ -145,7 +145,6 @@ func sumShewchuk*[T: SomeFloat](x: openArray[T]): T =
   if n > 0:
     dec(n)
     hi = p[n]
-    var lo = T(0)
     while n > 0:
       var x = hi
       dec(n)
