@@ -131,14 +131,9 @@ func sumShewchuk*[T: SomeFloat](x: openArray[T]): T =
   ## sum, rounded to the nearest representable floating-point number
   ## using the round-half-to-even rule
   ##
-  ## See also:
-  ## * https://docs.python.org/3/library/math.html#math.fsum
-  ## * https://code.activestate.com/recipes/393090/
-  ##
   ## Reference:
   ## * Shewchuk, JR. (1996) Adaptive Precision Floating-Point Arithmetic and
   ##   Fast Robust GeometricPredicates.
-  ##   http://www-2.cs.cmu.edu/afs/cs/project/quake/public/papers/robust-arithmetic.ps
   let p = partials(x)
   var hi = T(0)
   var n = p.len
