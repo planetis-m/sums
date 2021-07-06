@@ -11,7 +11,7 @@ task "docs", "Generate documentation":
   if doc.needsRefresh(src):
     echo "Generating the docs..."
     direShell(nimExe,
-        &"doc --project --verbosity:0 --git.url:{url} --git.devel:master --git.commit:master --out:{dir} {src[0]}")
+        &"doc --verbosity:0 --git.url:{url} --git.devel:master --git.commit:master --out:{dir} {src}")
     withDir(dir):
       moveFile("theindex.html", "index.html")
   else:

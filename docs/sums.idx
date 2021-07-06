@@ -1,0 +1,5 @@
+sumKbn	sums.html#sumKbn,openArray[T]	sums: sumKbn[T: SomeFloat](x: openArray[T]): T	
+sumKbk	sums.html#sumKbk,openArray[T]	sums: sumKbk[T: SomeFloat](x: openArray[T]): T	
+sumPairs	sums.html#sumPairs,openArray[T]	sums: sumPairs[T: SomeFloat](x: openArray[T]): T	
+sumShewchuk	sums.html#sumShewchuk,openArray[T]	sums: sumShewchuk[T: SomeFloat](x: openArray[T]): T	
+See also	sums.html#see-also	 See also	
