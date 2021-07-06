@@ -1,0 +1,2 @@
+# sums
+Accurate summation functions
